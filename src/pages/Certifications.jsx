@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaAward, FaTrophy, FaTimes, FaChevronLeft, FaChevronRight,
+import {
+  FaAward, FaTrophy, FaTimes, FaChevronLeft, FaChevronRight,
   FaFilter
 } from "react-icons/fa";
 import { useTheme } from "../ThemeContext";
@@ -48,171 +49,36 @@ const themeStyles = {
 const certificates = [
   {
     id: 1,
-    title: "Google IT Support",
-    organization: "Google",
-    category: "Professional",
-    skills: ["Network Protocols", "Cybersecurity", "Operating Systems"],
-    image: "/images/it-support.jpg"
+    title: "PMP – Project Management Professional",
+    organization: "Project Management Institute (PMI)",
+    category: "Certification",
+    skills: ["Project Management", "Agile Delivery", "Leadership"],
+    image: "/images/pmp.jpeg"
   },
   {
     id: 2,
-    title: "IBM Cybersecurity Analyst",
-    organization: "IBM",
-    category: "Professional",
-    skills: ["Pen testing", "forensics", "Incident Response"],
-    image: "/images/cybersecurity.png"
+    title: "PMI Membership",
+    organization: "Project Management Institute (PMI)",
+    category: "Membership",
+    skills: ["Community Engagement", "Professional Networking"],
+    image: "/images/pmi.jpg"
   },
   {
     id: 3,
-    title: "Cloud Architecture with Google Cloud",
-    organization: "Google Cloud",
-    category: "Professional",
-    skills: ["Containerization", "Cloud Services", "Prompt Engineering"],
-    image: "/images/google-cloud.jpg"
+    title: "PDU-35 Program",
+    organization: "Professional Training",
+    category: "Certification",
+    skills: ["Project Delivery", "Agile Practices"],
+    image: "/images/pdu35.jpeg"
   },
   {
     id: 4,
-    title: "Full-Stack Web Development with React Specialization",
-    organization: "The Hong Kong University of Science and Technology",
-    category: "Specialization",
-    skills: ["React", "Node.js", "MongoDB", "Express.js", "Bootstrap"],
-    image: "/images/react.png"
-  },
-  {
-    id: 5,
-    title: "Python for Everybody",
-    organization: "University of Michigan",
-    category: "Specialization",
-    skills: ["Data Structures", "Web Scrapping", "Visualizing"],
-    image: "/images/py.png"
-  },
-  {
-    id: 6,
-    title: "Django for Everybody",
-    organization: "University of Michigan",
-    category: "Specialization",
-    skills: ["Django", "PythonAnywhere", "JSON", "SQLite"],
-    image: "/images/django.jpg"
-  },
-  {
-    id: 7,
-    title: "Web Design for Everybody",
-    organization: "University of Michigan",
-    category: "Specialization",
-    skills: ["Wireframing", "Responsive Design"],
-    image: "/images/web-design.jpg"
-  },
-  {
-    id: 8,
-    title: "Modern Big Data Analysis with SQL",
-    organization: "Cloudera",
-    category: "Specialization",
-    skills: ["Hadoop", "Hive", "Spark", "SQL"],
-    image: "/images/big-data.jpg"
-  },
-  {
-    id: 9,
-    title: "Blockchain",
-    organization: "University at Buffalo",
-    category: "Specialization",
-    skills: ["Blockchain", "Distributed Systems"],
-    image: "/images/blockchain.png"
-  },
-  {
-    id: 10,
-    title: "Narrative Economics",
-    organization: "Yale University, Stanford Online",
-    category: "Course",
-    skills: ["Socioeconomics", "Consumer Behaviour"],
-    image: "/images/economy.png"
-  },
-  {
-    id: 11,
-    title: "Machine Learning",
-    organization: "Stanford Online",
-    category: "Course",
-    skills: ["Machine Learning", "AI"],
-    image: "/images/ml.png"
-  },
-  {
-    id: 12,
-    title: "Introduction to Psychology",
-    organization: "Yale University",
-    category: "Course",
-    skills: ["Critical Thinking", "Psychology"],
-    image: "/images/psychology.jpg"
-  },
-  {
-    id: 13,
-    title: "Infosys certified Google Cloud Digital Leader",
-    organization: "Infosys",
-    category: "Infosys",
-    skills: ["Google Cloud"],
-    image: "/images/infy-gcp-leader.png"
-  },
-  {
-    id: 14,
-    title: "Infosys Certified Front End Web Developer",
-    organization: "Infosys",
-    category: "Infosys",
-    skills: ["Front End Web Development"],
-    image: "/images/infy-frontend.png"
-  },
-  {
-    id: 15,
-    title: "Infosys Certified Cloud Beginner",
-    organization: "Infosys",
-    category: "Infosys",
-    skills: ["Cloud Computing", "Cloud Fundamentals"],
-    image: "/images/infy-cloud.png"
-  },
-  {
-    id: 16,
-    title: "Hackothsav",
-    organization: "SMVITM",
-    category: "Others",
-    skills: ["MERN Stack", "Hackathon"],
-    image: "/images/hackothsav.png"
-  },
-  {
-    id: 17,
-    title: "SSLC District Topper",
-    organization: "SMVITM",
-    category: "Others",
-    skills: ["SSLC", "Topper"],
-    image: "/images/sslc.jpg"
-  },
-  {
-    id: 18,
-    title: "Entrepreneurship Awareness Camp",
-    organization: "Entrepreneurship Development Institute of India",
-    category: "Others",
-    skills: ["Entrepreneurship Awareness"],
-    image: "/images/entrepreneurship.jpg"
-  },
-  {
-    id: 19,
-    title: "Web Development Internship",
-    organization: "Inmovidu",
-    category: "Others",
-    skills: ["Web Development", "Internship"],
-    image: "/images/internship.png"
-  },
-  {
-    id: 20,
-    title: "Technical Quiz",
-    organization: "SMVITM",
-    category: "Others",
-    skills: ["Technical Quiz"],
-    image: "/images/quiz.jpg"
-  },
-  {
-    id: 21,
-    title: "Build a Face Recognition Application using Python",
-    organization: "GUVI",
-    category: "Others",
-    skills: ["Python", "Face Recognition"],
-    image: "/images/guvi.png"
+    title: "Next Step: PMI-PBA",
+    organization: "Project Management Institute (PMI)",
+    category: "In Progress",
+    skills: ["Business Analysis", "Requirements Management"],
+    progress: 35 // نسبة التقدم %
+
   }
 ];
 
@@ -261,9 +127,9 @@ const ModalPortal = ({ children, isOpen }) => {
 
   // Render children into the portal div using dangerouslySetInnerHTML alternative
   const PortalContent = () => children;
-  
+
   return modalRoot ? (
-    <div 
+    <div
       ref={(ref) => {
         if (ref && modalRoot) {
           modalRoot.innerHTML = '';
@@ -292,7 +158,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       document.body.style.overflow = 'hidden';
       document.body.style.paddingRight = '0px';
       document.documentElement.style.overflow = 'hidden';
-      
+
       // Create and add modal container
       const modalContainer = document.getElementById('certificate-modal-container');
       if (!modalContainer) {
@@ -316,7 +182,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
       document.documentElement.style.overflow = '';
-      
+
       // Remove modal container
       const modalContainer = document.getElementById('certificate-modal-container');
       if (modalContainer) {
@@ -329,7 +195,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
       document.documentElement.style.overflow = '';
-      
+
       const modalContainer = document.getElementById('certificate-modal-container');
       if (modalContainer) {
         try {
@@ -378,10 +244,10 @@ const CertificateLightbox = ({ certificates, index, isOpen, onClose, onPrev, onN
     if (!mounted) return;
 
     const modalContainer = document.getElementById('certificate-modal-container');
-    
+
     if (isOpen && index !== null && certificates[index] && modalContainer) {
       const certificate = certificates[index];
-      
+
       // Create modal content
       modalContainer.innerHTML = `
         <div style="
@@ -613,8 +479,21 @@ const CertificateCard = ({ certificate, onClick, index }) => {
       style={{ transitionDelay: `${index * 50}ms`, minWidth: 0 }}
       title={certificate.title}
     >
-      <div className="flex items-center">
-        <div className="w-36 h-[110px] min-w-[9rem] rounded-xl overflow-hidden bg-white border flex items-center justify-center mr-4 relative aspect-[33/25]">
+      <div className="w-36 h-[110px] min-w-[9rem] rounded-xl overflow-hidden bg-white border flex items-center justify-center mr-4 relative aspect-[33/25]">
+        {certificate.category === "In Progress" && typeof certificate.progress === "number" ? (
+          <div className="w-[85%]">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-[10px] font-medium text-gray-500">In Progress</span>
+              <span className="text-[10px] font-semibold text-gray-600">{certificate.progress}%</span>
+            </div>
+            <div className="w-full bg-gray-200/70 rounded-full h-2.5">
+              <div
+                className="bg-cyan-600 h-2.5 rounded-full transition-all duration-500"
+                style={{ width: `${certificate.progress}%` }}
+              />
+            </div>
+          </div>
+        ) : (
           <img
             src={certificate.image}
             alt={certificate.title}
@@ -626,22 +505,9 @@ const CertificateCard = ({ certificate, onClick, index }) => {
               objectFit: "cover"
             }}
           />
-        </div>
-        <div className="flex-1 flex flex-col justify-between h-full min-w-0">
-          <div className="mb-2 flex items-center gap-2">
-            <span className={`px-2 py-1 rounded-full border font-bold border-dashed ${styles.accent} bg-white/20 text-xs tracking-wide`}>
-              {certificate.category}
-            </span>
-          </div>
-          <div className="flex flex-wrap gap-1 mb-2">
-            {certificate.skills && certificate.skills.map((skill, i) => (
-              <span key={i} className={`${styles.badge} border px-2 py-0.5 rounded-xl text-xs`}>
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
+        )}
       </div>
+
       <div className="mt-4 text-center">
         <h3 className={`font-bold ${styles.text} text-lg leading-tight mb-1`}>{certificate.title}</h3>
         <p className={`${styles.accent} font-semibold text-sm`}>{certificate.organization}</p>
@@ -655,10 +521,9 @@ const Certifications = () => {
   const styles = themeStyles[theme] || themeStyles.icy;
 
   // Show Professional certificates by default
-  const [activeFilter, setActiveFilter] = useState("Professional");
+  const [activeFilter, setActiveFilter] = useState("All");
   const [filteredCertificates, setFilteredCertificates] = useState(
-  certificates.filter(cert => cert.category === "Professional")
-  );
+    certificates);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const sectionRef = useRef(null);
@@ -723,20 +588,19 @@ const Certifications = () => {
               onClick={() => handleFilter(category)}
               className={`
                 px-4 py-2 rounded-lg border text-sm font-medium transition-all duration-300
-                ${activeFilter === category 
+                ${activeFilter === category
                   ? styles.filterActive + " ring-2 ring-offset-2 ring-cyan-400"
                   : `${styles.button} hover:scale-105`
                 }
               `}
             >
               {category}
-              <span className={`ml-2 inline-block px-1.5 py-0.5 rounded-full text-xs font-bold ${
-                  activeFilter === category 
-                    ? 'bg-white/20 text-current' 
-                    : 'bg-black/10 text-current'
+              <span className={`ml-2 inline-block px-1.5 py-0.5 rounded-full text-xs font-bold ${activeFilter === category
+                  ? 'bg-white/20 text-current'
+                  : 'bg-black/10 text-current'
                 }`}>
-                  {getCategoryCount(category)}
-                </span>
+                {getCategoryCount(category)}
+              </span>
               {activeFilter === category && (
                 <span className="ml-2 inline-block text-xs font-bold text-green-600">✓</span>
               )}

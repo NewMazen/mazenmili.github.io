@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
   FaEnvelope, FaPhone, FaMapMarkerAlt, FaRocket, FaLightbulb, FaHeart, FaReact,
-  FaGithub, FaLinkedin, FaInstagram
+  FaGithub, FaLinkedin, FaInstagram,
+  FaWhatsapp
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiGooglescholar, SiQwiklabs } from "react-icons/si";
@@ -44,11 +45,9 @@ const themeStyles = {
   }
 };
 
-const emailInitial = "ab007shetty";
+const emailInitial = "mhmalibari";
 const emailDomains = [
-  { domain: "gmail.com", color: "#06b622" },
-  { domain: "outlook.com", color: "#ec4899" },
-  { domain: "icloud.com", color: "#a56635" }
+  { domain: "gmail.com", color: "#0696b6ff" },
 ];
 
 const contactInfo = [
@@ -56,68 +55,55 @@ const contactInfo = [
     icon: <FaEnvelope />,
     label: "Email",
     value: "", // handled in ContactCard for animation
-    link: "mailto:ab007shetty@gmail.com",
-    description: "Only active on Gmail"
+    link: "mailto:mhmalibari@gmail.com",
+    description: "I usually reply within a day or two"
   },
   {
     icon: <FaPhone />,
     label: "Phone",
-    value: "+91 8150071512",
-    link: "tel:+918150071512",
-    description: "Call may not connect as there's no balance"
+    value: "+966 500175890",
+    link: "tel:+966500175890",
+    description: "Available 9am-10pm KSA time"
   },
   {
     icon: <FaMapMarkerAlt />,
     label: "Location",
-    value: "Udupi, Karnataka",
-    link: "https://maps.google.com/?q=Udupi,Karnataka",
-    description: "Technically not an island anymore"
-  }
+    value: "Makkah, Riyadh, Saudi Arabia",
+    link: "",
+    description: "From Makkah - Now building projects in Riyadh"
+  },
 ];
 
 const socialLinks = [
-  {
-    icon: <FaGithub />,
-    name: "GitHub",
-    url: "https://github.com/ab007shetty",
-    color: "text-gray-800 dark:text-gray-200",
-    description: "2nd Fav Hub"
-  },
+  
   {
     icon: <FaLinkedin />,
     name: "LinkedIn",
-    url: "https://linkedin.com/in/ab007shetty",
+    url: "https://www.linkedin.com/in/mazen-malibari-%C2%AEpmp-4a98b0214/",
     color: "text-blue-600",
     description: "Thinking of Uninstalling"
   },
   {
     icon: <FaXTwitter />,
     name: "X",
-    url: "https://x.com/ab007shetty",
+    url: "https://x.com/Mazenmilii",
     color: "text-blue-400",
     description: "Place to pick Fights"
   },
   {
-    icon: <FaInstagram />,
-    name: "Instagram",
-    url: "https://www.instagram.com/a.b.shetty",
-    color: "text-pink-500",
-    description: "No life behind the code"
+    icon: <FaGithub />,
+    name: "GitHub",
+    url: "https://github.com/NewMazen",
+    color: "text-gray-800 dark:text-gray-200",
+    description: "I'm a guest among programmers"
   },
   {
-    icon: <SiGooglescholar />,
-    name: "Google Scholar",
-    url: "https://scholar.google.com/citations?user=i1vJxMYAAAAJ",
-    color: "text-blue-500",
-    description: "Im not a Scholar"
-  },
-  {
-    icon: <SiQwiklabs />,
-    name: "Qwiklabs",
-    url: "https://www.qwiklabs.com/public_profiles/a71f17d6-36af-4e30-b70f-8771bf211324",
+    icon: <FaWhatsapp />,
+    name: "WhatsApp",
+    url: "https://wa.me/966500175890",
     color: "text-green-500",
-    description: "Just for Goodies"
-  }
+    description: "Quick chat or project discussion"
+  },
 ];
 
 // Contact Card with animated domain for email
@@ -211,6 +197,7 @@ const SocialCard = ({ social, index, theme }) => {
   }, [index]);
 
   return (
+    
     <a
       href={social.url}
       target="_blank"
@@ -276,9 +263,11 @@ export default function Contact() {
             Stay updated with my latest projects and tech insights
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
           {socialLinks.map((social, index) => (
+             <div key={social.name} className="h-44 w-60">
             <SocialCard key={social.name} social={social} index={index} theme={theme} />
+          </div>
           ))}
         </div>
       </div>
@@ -290,9 +279,9 @@ export default function Contact() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className={`text-sm ${styles.textSecondary} text-center md:text-left break-words w-full`}>
                 <p className="flex items-center justify-center md:justify-start gap-2 flex-wrap break-all w-full">
-                  © {currentYear} Anirudha B Shetty. Made with
+                  © {currentYear} Mazen Malibari. Taming chaos, creating meaning!
                   <FaHeart className={`${styles.accent} animate-pulse`} />
-                  in India
+
                 </p>
               </div>
               {/* Fix: Always force 'Powered by React' to be a single line on desktop */}

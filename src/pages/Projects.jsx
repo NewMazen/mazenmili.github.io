@@ -79,173 +79,62 @@ const techIcons = {
 const projects = [
   {
     id: 1,
-    title: "Blog App",
-    description: "Django blog app with GitHub OAuth login, users can upload text and images, comment, and favorite posts.",
-    image: "https://plus.unsplash.com/premium_photo-1720744786849-a7412d24ffbf?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Django", "Bootstrap", "SQLite"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/dj4e",
-    live: "https://ab007shetty.pythonanywhere.com/",
-    forks: 16,
-    stars: 26
+    title: "Salem App",
+    description:
+      "Learning app for ages 4–8 (Arabic letters & Qur’an basics). I manage delivery with a vendor team: negotiations, legal fixes, product roadmap, and sponsor alignment. Releasing on cadence while keeping quality steady. 170K+ users.",
+    image: "images/salem.png",
+    technologies: ["Product Management", "Agile Delivery", "Vendor Mgmt", "UAT/QA", "Analytics"],
+    status: "Active",
+    live: "https://onelink.to/salem-app",
+
   },
   {
     id: 2,
-    title: "EAttendance – Attendance Management System",
-    description: "Real-time student attendance system using face recognition module, built on dlib's ResNet-34 model.",
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Node.js", "MongoDB", "OpenCV"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/eattendance",
-    live: "http://eattendance2021.herokuapp.com/",
-    forks: 4,
-    stars: 12
+    title: "Maher App",
+    description:
+      "Interactive Qur’an recitation app with AI-assisted practice and feedback. Leading product development and coordinating a lean team of ~4 collaborators (dev/design/content). 130K+ downloads.",
+    image: "images/maher.jpeg",
+    technologies: ["Product Dev", "Roadmapping", "AI Features", "UAT", "Stakeholder Comms"],
+    status: "Active",
+    live: "https://apps.apple.com/sa/app/%D9%85%D8%A7%D9%87%D8%B1-%D8%AA%D8%B3%D9%85%D9%8A%D8%B9-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86/id6737059750?l=ar",
+
   },
   {
     id: 3,
-    title: "Crop Management System",
-    description: "ML-based system that predicts crops, recommends fertilizers, and provides rainfall and yield forecasts.",
-    image: "https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?auto=format&fit=crop&w=600&q=80",
-    technologies: ["PHP", "Python", "Pandas"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/crop-management-system",
-    live: "#",
-    forks: 13,
-    stars: 26
+    title: "Noble — Quran Radio Rebuild",
+    description:
+      "Re-framing a legacy Quran radio product with a new brand, documentation, and delivery rhythm. Focused on value re-definition, team structure, and transparent sponsor reporting. (Previous audience numbers are historical; current work is about meaningful relaunch.)",
+    image: "images/noble.jpeg",
+    technologies: ["Brand Rebuild", "Product Strategy", "Team Structuring", "Reporting"],
+    status: "Rebuilding",
+    live: "https://stage.noble.tv",
+
   },
   {
     id: 4,
-    title: "EClassroom",
-    description: "Django based Student Teacher portal for communication and submitting assignments.",
-    image: "https://images.unsplash.com/photo-1649920442906-3c8ef428fb6e?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Django", "Bootstrap", "Python"],
+    title: "Nusuk Card — Decision Support",
+    description:
+      "Supervisor for the Guidance & Monitoring Center (with EVC as the executing arm). Built 70+ decision-support reports for the Ministry of Hajj to improve operational oversight during Hajj.",
+    image: "images/nusuk.jpeg",
+    technologies: ["Decision Support", "Reporting", "Data Analysis", "Ops Oversight"],
     status: "Completed",
-    github: "https://github.com/ab007shetty/eclassroom-django",
-    live: "https://eclassroom.pythonanywhere.com/",
-    forks: 9,
-    stars: 22
+    live: "https://play.google.com/store/apps/details?id=sa.nusuk.newoperatorsapp2&pcampaignid=web_share",
+
   },
   {
     id: 5,
-    title: "ViMusic – Web based Music Player",
-    description: "Web-based solution for ViMusic Android player. Features: Favorites, playlists, DB import/export, Firebase login.",
-    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Node.js", "React", "Firebase"],
+    title: "Zaden — Graduation Project",
+    description:
+      "Sales forecasting for retail using ML with up to 99% accuracy. I led UI/UX and front-end to make insights actionable and simple. Project won two university-wide awards.",
+    image: "images/zaden.jpeg",
+    technologies: ["UI/UX", "Frontend", "ML Forecasting", "Data Viz"],
     status: "Completed",
-    github: "https://github.com/ab007shetty/ViMusic",
-    live: "https://vimusic.vercel.app/",
-    forks: 0,
-    stars: 5
-  },
-  {
-    id: 6,
-    title: "Gemini – Chatbot",
-    description: "Single page serverless site for Google's AI language and vision model.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Ajax", "Postman", "JavaScript"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/Gemini",
-    live: "https://ab007shetty.github.io/Gemini/?key=AIzaSyDz83LLl7dKzYsCZoATDd5boMlgjbRvhhE",
-    forks: 13,
-    stars: 28
-  },
-  {
-    id: 7,
-    title: "Life Share – Blood Bank Management System",
-    description: "Node.js-based API server connecting donors and recipients, with multi-language support and chatbot.",
-    image: "https://images.unsplash.com/photo-1615461066159-fea0960485d5?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Node.js", "Bootstrap", "MongoDB"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/lifeshare",
-    live: "https://lifeshare2021.herokuapp.com/",
-    forks: 0,
-    stars: 4
-  },
-  {
-    id: 8,
-    title: "Quiz Master – Online Quiz Management System",
-    description: "Real-time quiz platform for schools with live scores, leaderboards, OTP-based, Domain restricted login.",
-    image: "https://plus.unsplash.com/premium_photo-1678216286021-e81f66761751?auto=format&fit=crop&w=600&q=80",
-    technologies: ["PHP", "Bootstrap", "MySQL"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/quiz-master-2",
-    live: "http://quizmaster.epizy.com/",
-    forks: 2,
-    stars: 6
-  },
-  {
-    id: 9,
-    title: "Tweet Align",
-    description: "ML model predicting political alignment (left/right) based on users' tweets and likes.",
-    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Python", "Scikit-learn", "Pandas"],
-    status: "Ongoing",
-    github: "https://github.com/ab007shetty/TweetAlign",
-    live: "#",
-    forks: 0,
-    stars: 0
-  },
-  {
-    id: 10,
-    title: "Chowkabara",
-    description: "Digitize a native board game into an online multiplayer experience.",
-    image: "https://www.three-mens-morris.com/images/morris.png?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Node.js", "React", "Socket.io"],
-    status: "Ongoing",
-    github: "https://github.com/ab007shetty/chowkabara",
-    live: "#",
-    forks: 0,
-    stars: 0
-  },
-  {
-    id: 11,
-    title: "Revel",
-    description: "New Gen Event Booking Platform for Bangalore based Startup.",
-    image: "https://media.licdn.com/dms/image/v2/D4D22AQG8z3H3S5DYsw/feedshare-shrink_2048_1536/B4DZjSyWLAH4A0-/0/1755883089159?e=1758758400&v=beta&t=631R3lMJefAji-o4upccMOg1hmaGnPXklWrS8iVUVKk",
-    technologies: ["Node.js", "React", "Firebase", "Tailwind CSS"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/revel",
-    live: "https://therevel.co/",
-    forks: 0,
-    stars: 0
-  },
-  {
-    id: 12,
-    title: "Task Planner",
-    description: "A Month View Task Planner with drag & drop functionality, task scheduling, and filtering capabilities.",
-    image: "https://plus.unsplash.com/premium_photo-1706544427087-9f8747c5c675?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Node.js", "React", "react-dnd", "Tailwind CSS"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/planner",
-    live: "https://ab007shetty.github.io/planner/",
-    forks: 0,
-    stars: 0
-  },
-  {
-    id: 13,
-    title: "Learn MERN",
-    description: "A comprehensive guide to learning the MERN stack (MongoDB, Express.js, React.js, Node.js) through code snippets and puzzles.",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Node.js", "React", "Tailwind CSS"],
-    status: "Completed",
-    github: "https://github.com/ab007shetty/learnMERN",
-    live: "https://ab007shetty.github.io/learnMERN/",
-    forks: 0,
-    stars: 0
-  },
-  {
-    id: 14,
-    title: "Snap 3D",
-    description: "Images to 3D model rendering using Meshroom and Open3D.",
-    image: "https://images.unsplash.com/photo-1644158767445-79390e879319?auto=format&fit=crop&w=600&q=80",
-    technologies: ["Nvidia CUDA", "Open3D", "Meshroom", "Node.js", "React"],
-    status: "Ongoing",
-    github: "https://github.com/ab007shetty/snap3d",
-    live: "https://ab007shetty.github.io/snap3d/",
-    forks: 0,
-    stars: 0
+    live: "https://zaden.tech/",
+
   }
 ];
+
+
 
 // ========== Statuses ==========
 const statuses = [
@@ -354,7 +243,7 @@ const MobileCard = ({ project, onPrev, onNext, isTransitioning, styles, techIcon
           </div>
         </div>
         <div className="flex gap-2 pt-1">
-          <a
+          {/* <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -367,7 +256,7 @@ const MobileCard = ({ project, onPrev, onNext, isTransitioning, styles, techIcon
           >
             <FaGithub />
             Code
-          </a>
+          </a> */}
           <a
             href={project.live}
             target="_blank"
@@ -396,26 +285,26 @@ const DesktopCard = ({ project, index, currentIndex, filteredProjects, styles, t
   let zIndex = 0;
   let opacity = 1;
 
-if (normalizedIndex === 0) {
-  transform = 'translateX(-50%) scale(1.1)';
-  zIndex = 10;
-} else if (normalizedIndex === 1 || normalizedIndex === totalCards - 1) {
-  transform = normalizedIndex === 1 
-    ? 'translateX(calc(-50% + 150px)) scale(0.95)' 
-    : 'translateX(calc(-50% - 150px)) scale(0.95)';
-  zIndex = 9;
-  opacity = 0.7;
-} else if (normalizedIndex === 2 || normalizedIndex === totalCards - 2) {
-  transform = normalizedIndex === 2 
-    ? 'translateX(calc(-50% + 300px)) scale(0.8)' 
-    : 'translateX(calc(-50% - 300px)) scale(0.8)';
-  zIndex = 8;
-  opacity = 0.4;
-} else {
-  transform = 'translateX(-50%) scale(0.8)';
-  zIndex = 0;
-  opacity = 0;
-}
+  if (normalizedIndex === 0) {
+    transform = 'translateX(-50%) scale(1.1)';
+    zIndex = 10;
+  } else if (normalizedIndex === 1 || normalizedIndex === totalCards - 1) {
+    transform = normalizedIndex === 1
+      ? 'translateX(calc(-50% + 150px)) scale(0.95)'
+      : 'translateX(calc(-50% - 150px)) scale(0.95)';
+    zIndex = 9;
+    opacity = 0.7;
+  } else if (normalizedIndex === 2 || normalizedIndex === totalCards - 2) {
+    transform = normalizedIndex === 2
+      ? 'translateX(calc(-50% + 300px)) scale(0.8)'
+      : 'translateX(calc(-50% - 300px)) scale(0.8)';
+    zIndex = 8;
+    opacity = 0.4;
+  } else {
+    transform = 'translateX(-50%) scale(0.8)';
+    zIndex = 0;
+    opacity = 0;
+  }
 
   const cardStyle = {
     transform,
@@ -495,7 +384,7 @@ if (normalizedIndex === 0) {
           </div>
         </div>
         <div className="flex gap-2 pt-1">
-          <a
+          {/* <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -509,7 +398,7 @@ if (normalizedIndex === 0) {
           >
             <FaGithub />
             Code
-          </a>
+          </a> */}
           <a
             href={project.live}
             target="_blank"
@@ -537,15 +426,9 @@ const Projects = () => {
   const styles = themeStyles[theme] || themeStyles.icy;
   const isMobile = useIsMobile(768);
 
-  const [activeStatus, setActiveStatus] = useState("Completed");
-  
-  // Updated to default to Revel (id: 11)
-  const getInitialIndex = () => {
-    const revelIndex = projects.findIndex(p => p.id === 11);
-    return revelIndex === -1 ? 0 : revelIndex;
-  };
+  const [activeStatus, setActiveStatus] = useState("All");
 
-  const [currentIndex, setCurrentIndexState] = useState(getInitialIndex());
+    const [currentIndex, setCurrentIndexState] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const containerRef = useRef(null);
   const startXRef = useRef(0);
@@ -553,7 +436,7 @@ const Projects = () => {
   const isDraggingRef = useRef(false);
 
   const filteredProjects = projects.filter(p => activeStatus === "All" ? true : p.status === activeStatus);
-  
+
   // Get count for each status
   const getProjectCount = (status) => {
     if (status === "All") return projects.length;
@@ -561,13 +444,11 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    let newIndex = 0;
-    const revelIdx = filteredProjects.findIndex(p => p.id === 11);
-    if (revelIdx !== -1) {
-      newIndex = revelIdx;
-    }
-    setCurrentIndexState(Math.min(newIndex, Math.max(filteredProjects.length - 1, 0)));
-  }, [activeStatus, filteredProjects.length]);
+  if (filteredProjects.length > 0) {
+    setCurrentIndexState(0);
+  }
+}, [activeStatus, filteredProjects.length]);
+
 
   useEffect(() => {
     if (currentIndex >= filteredProjects.length) {
@@ -642,8 +523,7 @@ const Projects = () => {
               My Projects
             </h1>
             <p className={`text-lg md:text-xl ${styles.textSecondary} max-w-3xl mx-auto`}>
-              A collection of my academic personal and freelance projects.
-            </p>
+              A showcase of my technology and product management projects in education, AI, and digital transformation.            </p>
           </div>
           {/* Status Filter */}
           <div className="flex flex-wrap gap-4 justify-center mb-0">
@@ -664,11 +544,10 @@ const Projects = () => {
                 `}
               >
                 {status}
-                <span className={`ml-2 inline-block px-1.5 py-0.5 rounded-full text-xs font-bold ${
-                  activeStatus === status 
-                    ? 'bg-white/20 text-current' 
+                <span className={`ml-2 inline-block px-1.5 py-0.5 rounded-full text-xs font-bold ${activeStatus === status
+                    ? 'bg-white/20 text-current'
                     : 'bg-black/10 text-current'
-                }`}>
+                  }`}>
                   {getProjectCount(status)}
                 </span>
                 {activeStatus === status && (

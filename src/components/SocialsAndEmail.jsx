@@ -26,65 +26,14 @@ function AdScientificIndexLogo({ className = "" }) {
   );
 }
 
-const emailInitial = "ab007shetty";
+const emailInitial = "-";
 const emailDomains = [
   { domain: "gmail.com", colorKey: "highlightDomain" },
   { domain: "outlook.com", colorKey: "highlightDomain2" },
   { domain: "icloud.com", colorKey: "highlightDomain3" },
 ];
 
-const socials = [
-  {
-    href: "https://github.com/ab007shetty",
-    icon: <FaGithub />,
-    label: "GitHub"
-  },
-  {
-    href: "https://linkedin.com/in/ab007shetty",
-    icon: <FaLinkedin />,
-    label: "LinkedIn"
-  },
-  {
-    href: "https://x.com/ab007shetty",
-    icon: <FaXTwitter />,
-    label: "X"
-  },
-  {
-    href: "https://www.instagram.com/a.b.shetty",
-    icon: <FaInstagram />,
-    label: "Instagram"
-  },
-  {
-    href: "https://www.coursera.org/user/9a1f6f65c70233a4cbf41887f48e0c06",
-    icon: <SiCoursera />,
-    label: "Coursera"
-  },
-  {
-    href: "https://scholar.google.com/citations?user=i1vJxMYAAAAJ",
-    icon: <SiGooglescholar />,
-    label: "Google Scholar"
-  },
-  {
-    href: "https://www.qwiklabs.com/public_profiles/a71f17d6-36af-4e30-b70f-8771bf211324",
-    icon: <SiQwiklabs />,
-    label: "Qwiklabs"
-  },
-  {
-    href: "https://monkeytype.com/profile/abshetty",
-    icon: <GiMonkey />,
-    label: "Typing Monkey"
-  },
-  {
-    href: "https://www.adscientificindex.com/scientist/anirudha-b-shetty/4804035",
-    icon: <AdScientificIndexLogo />,
-    label: "AD Scientific Index"
-  },
-  {
-    href: "https://bit.ly/3IJ8Ds3",
-    icon: <BiSearch />,
-    label: "Google Search"
-  }
-];
+
 
 const accentsMap = {
   icy: {

@@ -4,7 +4,6 @@ import { useTheme } from "../ThemeContext";
 const images = [
   "/images/profile1.png",
   "/images/profile2.png",
-  "/images/profile3.png",
 ];
 
 const accentsMap = {
@@ -50,11 +49,12 @@ const accentsMap = {
 };
 
 const typewriterText = [
-  "Full-Stack Developer",
-  "AI Enthusiast", 
-  "Cloud Architect",
-  "Problem Solver",
-  "Dream Builder"
+"Agile Project Management",
+  "Business Analysis",
+  "Decision Support",
+  "Product Development",
+  "Process Optimization",
+  "Data-Driven Delivery"
 ];
 
 // Memoized floating elements component
@@ -257,7 +257,7 @@ function LandingPage() {
             <div className="mb-8 text-center md:text-left">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 animate-fade-in">
                 <span className="wave-animation inline-block">🙏</span>
-                <span className="ml-3">Namaste!</span>
+                <span className="ml-3">Hello</span>
               </h1>
 
               <div className="text-lg md:text-xl lg:text-2xl mb-6">
@@ -265,13 +265,13 @@ function LandingPage() {
                 <span
                   className={`font-bold text-2xl md:text-3xl lg:text-4xl ${accents.nameColor} drop-shadow-sm`}
                 >
-                  Anirudha B Shetty
+                  Mazen Malibari 
                 </span>
               </div>
                           {/* Description */}
             <div className={`space-y-4 mb-10 ${accents.text} text-center md:text-left`}>
               <p className="text-lg md:text-xl leading-relaxed animate-fade-in-up">
-                 <span className={`${accents.highlight} font-semibold`}>Full Stack Developer</span> - MERN, Firebase, Tailwind
+                 <span className={`${accents.highlight} font-semibold`}>  Technical Project Manager</span> - Product Development, Agile, Decision Support
               </p>
             </div>
 

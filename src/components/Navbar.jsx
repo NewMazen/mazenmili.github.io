@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { FaHome, FaProjectDiagram, FaGraduationCap, FaEnvelope, FaUserTie, FaUser, FaAward } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
+// import { GiSkills } from "react-icons/gi";
 import { useTheme } from "../ThemeContext";
 
 // Section icons for nav
 const sectionIcons = {
   home: <FaHome />,
   about: <FaUserTie />,
-  skills: <GiSkills />,
+  // skills: <GiSkills />,
   experience: <FaUserTie />,
   certifications: <FaAward />,
   projects: <FaProjectDiagram />,

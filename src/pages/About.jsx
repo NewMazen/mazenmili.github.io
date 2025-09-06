@@ -69,34 +69,7 @@ const themeStyles = {
 };
 
 const allSkillDetails = [
-  { key: "python", name: "Python", icon: <SiPython className="text-yellow-500"/>, desc: "Programming Language", percent: 90 },
-  { key: "java", name: "Java", icon: <FaJava className="text-red-500"/>, desc: "Programming Language", percent: 85 },
-  { key: "js", name: "Javascript", icon: <SiJavascript className="text-yellow-400"/>, desc: "Programming Language", percent: 92 },
-  { key: "php", name: "PHP", icon: <SiPhp className="text-indigo-400"/>, desc: "Programming Language", percent: 80 },
-  { key: "sql", name: "SQL", icon: <SiMicrosoftsqlserver className="text-red-800"/>, desc: "Programming Language", percent: 75 },
-  { key: "react", name: "React.js", icon: <FaReact className="text-cyan-400"/>, desc: "Front-End Framework", percent: 88 },
-  { key: "redux", name: "Redux.js", icon: <SiRedux className="text-purple-600"/>, desc: "State Management", percent: 78 },
-  { key: "bootstrap", name: "Bootstrap", icon: <SiBootstrap className="text-purple-700"/>, desc: "CSS Framework", percent: 82 },
-  { key: "tailwind", name: "Tailwind", icon: <SiTailwindcss className="text-cyan-400"/>, desc: "CSS Framework", percent: 84 },
-  { key: "nodejs", name: "Node.js", icon: <FaNodeJs className="text-green-600"/>, desc: "Backend Runtime", percent: 85 },
-  { key: "express", name: "Express.js", icon: <SiExpress className="text-black dark:text-white"/>, desc: "Backend Framework", percent: 80 },
-  { key: "django", name: "Django", icon: <SiDjango className="text-green-900"/>, desc: "Backend Framework", percent: 75 },
-  { key: "restapi", name: "RESTful APIs", icon: <FaServer className="text-blue-400"/>, desc: "API Design", percent: 82 },
-  { key: "gcp", name: "Google Cloud Platform", icon: <FaCloud className="text-blue-400"/>, desc: "Cloud Platform", percent: 72 },
-  { key: "mongodb", name: "MongoDB", icon: <SiMongodb className="text-green-500"/>, desc: "NoSQL Database", percent: 84 },
-  { key: "mysql", name: "MySQL", icon: <SiMysql className="text-blue-700"/>, desc: "RDBMS", percent: 80 },
-  { key: "firebase", name: "Firebase", icon: <SiFirebase className="text-yellow-500"/>, desc: "Cloud Database", percent: 77 },
-  { key: "cloudera", name: "Cloudera", icon: <SiCloudera className="text-yellow-900"/>, desc: "Big Data Platform", percent: 70 },
-  { key: "jest", name: "Jest", icon: <SiJest className="text-pink-600"/>, desc: "Testing", percent: 78 },
-  { key: "postman", name: "Postman", icon: <SiPostman className="text-orange-500"/>, desc: "API Testing", percent: 86 },
-  { key: "chromedevtools", name: "Chrome Dev Tools", icon: <FaChrome className="text-blue-500"/>, desc: "Debugging", percent: 85 },
-  { key: "git", name: "Git", icon: <FaGitAlt className="text-orange-700"/>, desc: "Version Control", percent: 92 },
-  { key: "bitbucket", name: "Bitbucket", icon: <SiBitbucket className="text-blue-600"/>, desc: "Version Control", percent: 72 },
-  { key: "docker", name: "Docker", icon: <FaDocker className="text-blue-500"/>, desc: "Containerization", percent: 85 },
-  { key: "railway", name: "Railway", icon: <SiRailway className="text-indigo-400"/>, desc: "Cloud Deployment", percent: 69 },
-  { key: "vercel", name: "Vercel", icon: <SiVercel className="text-black dark:text-white"/>, desc: "Cloud Deployment", percent: 72 },
-  { key: "jira", name: "Jira", icon: <FaJira className="text-blue-500"/>, desc: "Project Management", percent: 78 },
-  { key: "agile", name: "Agile & Scrum", icon: <FaTools className="text-green-600"/>, desc: "Methodology", percent: 80 },
+  { key: "python", name: "Python", icon: <SiPython className="text-yellow-500" />, desc: "Programming Language", percent: 90 },
 ];
 
 // GROUPS
@@ -109,79 +82,99 @@ const skillSections = [
   { group: "DevOps & Deployment", icon: <FaTools className="text-green-600" />, keys: ["git", "bitbucket", "docker", "railway", "vercel", "gcp"] },
   { group: "Project Management", icon: <FaJira className="text-blue-500" />, keys: ["jira", "agile"] }
 ];
-
 // HIGHLIGHTS, EXPERIENCE, EDUCATION
 const highlights = [
-  { emoji: "🎓", text: "Completed 100+ courses on Coursera.", link: "https://www.coursera.org/user/9a1f6f65c70233a4cbf41887f48e0c06" },
-  { emoji: "☁️", text: "Google Cloud Arcade Champion — completed 400+ Google Cloud Qwiklabs.", link: "https://www.cloudskillsboost.google/public_profiles/a71f17d6-36af-4e30-b70f-8771bf211324" },
-  { emoji: "🏅", text: "Hackothsav National Finalist: Consolation prize winner in a national-level hackathon.", link: "" },
-  { emoji: "🌟", text: "Ranked among Top 6000 GitHub developers (India) with 170+ stars and 50+ forks.", link: "https://stardev.io/developers/ab007shetty#country-badge" },
-  { emoji: "📄", text: 'Authored a research paper: "Facial Recognition Using Haar Cascade and LBP Classifiers", 130+ citations (Elsevier).', link: "https://scholar.google.com/citations?user=i1vJxMYAAAAJ" }
+  { emoji: "📱", text: "Tech Projects → Managing 3 active apps with 300K+ downloads and 15M+ past listeners.", link: "" },
+  { emoji: "🕋", text: "Nusuk Card Project → Supervised the Guidance & Monitoring Center, delivered 70+ decision-support reports for the Ministry of Hajj.", link: "" },
+  { emoji: "🏆", text: "Awards → Graduation project won 2 university-wide prizes (Best Poster & 3-Minute Pitch).", link: "" },
+  { emoji: "🎤", text: "Communication & Leadership → Delivered 20+ partner presentations, 100+ stage appearances, strong negotiation & people skills.", link: "" },
+  { emoji: "🌍", text: "Community & Growth → PMP-certified & PMI member, next milestone: PMI-PBA.", link: "" }
 ];
 
 const experienceGroups = [
   {
-    label: "Infosys",
+    label: "Al-Burhan Association",
     entries: [
       {
-        title: "Systems Engineer",
-        company: "Infosys",
-        location: "Mangaluru, Karnataka",
-        period: "Aug 2021 – Apr 2023",
+        title: "Technical Project Manager",
+        company: "Al-Burhan Association",
+        location: "Makkah / Riyadh",
+        period: "2023 – Present",
         description: [
-          "Built web applications using React.js across two major international projects, such as Waters and Elanco.",
-          "Integrated product dashboards with search and filter features, shopping cart, and order history components.",
-          "Created interfaces for medicine stock tracking, doctor prescription entry, and report generation using Chart.js.",
-          "Utilized Git, Postman, and JIRA for efficient development, testing, and project management.",
-          "Ensured code quality through ESLint and Prettier, also done unit testing with Jest.",
-          "Resolved UI/API issues through debugging, isolation testing, and effective team collaboration.",
-          "Collaborated with the DevOps team to implement CI/CD pipelines, enabling efficient deployment workflows through GitHub Actions and Jenkins.",
-          "Developed a personal web app to call LLMs to debug and speed up the development process.",
-          "Additionally completed the Full-Stack Web Development with React (by Hong Kong University) via Coursera to enhance technical delivery."
+          "Managing three active apps (Salem, Maher, Noble) with 300K+ downloads and 15M+ past listeners.",
+          "Coordinating ~4 collaborators per project across development, design, and content.",
+          "Handling challenges ranging from legal/contract issues to brand rebuilding and product growth."
         ],
         skills: [
-          "React.js",
-          "Chart.js",
-          "Node.js",
-          "Jest",
-          "CI/CD",
-          "GitHub Actions",
-          "Jenkins",
-          "Git",
-          "Postman",
-          "JIRA"
+          "Project Management",
+          "Agile Delivery",
+          "Stakeholder Alignment",
+          "Vendor Management",
+          "Product Development"
         ]
       }
     ]
   },
   {
-    label: "Digitran Technologies",
+    label: "Nusuk Card Project - Ministry of Hajj",
     entries: [
       {
-        title: "Software Developer (Part-Time)",
-        company: "Digitran Technologies",
-        location: "Udupi, Karnataka",
-        period: "2023 – 2025",
+        title: "Data Analysis Consultant - Decision Support",
+        company: "EVC / Ministry of Hajj",
+        location: "Makkah",
+        period: "2024 – Present",
         description: [
-          "Handled full-stack web application development for logistics and healthcare SaaS products.",
-          "Developed and maintained core features while ensuring scalability and performance improvements.",
-          "Integrated REST APIs and optimized data flow for smooth user experience.",
-          "Actively participated in Agile ceremonies, including sprint planning and retrospectives.",
-          "Conducted code reviews and improved overall code quality.",
-          "Gave product demos to US-based clients and incorporated feedback effectively."
+          "Supervised the Guidance & Monitoring Center for the Nusuk Card project.",
+          "Built and delivered 70+ decision-support reports for the Ministry of Hajj.",
+          "Enabled better oversight and informed decision-making during Hajj operations."
         ],
         skills: [
-          "Node.js",
-          "React.js",
-          "MongoDB",
-          "Firebase",
-          "MySQL",
-          "GCP",
-          "Firebase",
-          "REST APIs",
-          "Agile",
-          "Code Reviews",
-          "Client Demos"
+          "Decision Support",
+          "Data Analysis",
+          "Reporting",
+          "Team Supervision"
+        ]
+      }
+    ]
+  },
+  {
+    label: "The First City",
+    entries: [
+      {
+        title: "React Native Intern",
+        company: "The First City",
+        location: "Makkah",
+        period: "2022",
+        description: [
+          "Developed a mobile monitoring app for Hajj supervisors to evaluate and track worker performance.",
+          "Learned and applied mobile development foundations in a real-world project context."
+        ],
+        skills: [
+          "React Native",
+          "Mobile App Development",
+          "Field Monitoring Solutions"
+        ]
+      }
+    ]
+  },
+  {
+    label: "Aoun Society – Kibtar Tech Community",
+    entries: [
+      {
+        title: "Founder Keptar (Volunteer)",
+        company: "Aoun Society",
+        location: "Makkah",
+        period: "2021 – 2023",
+        description: [
+          "Founded Kibtar, a grassroots tech community under Aoun Society.",
+          "Organized 10+ meetups for developers, entrepreneurs, and innovators in Makkah and Jeddah.",
+          "Promoted collaboration and knowledge-sharing across the local tech ecosystem."
+        ],
+        skills: [
+          "Community Building",
+          "Event Organization",
+          "Public Speaking",
+          "Networking"
         ]
       }
     ]
@@ -191,26 +184,32 @@ const experienceGroups = [
 
 const educationGroups = [
   {
-    label: "SSLC (10th Grade)",
+    label: "High School",
     icon: <FaSchool className="text-cyan-500" />,
-    entries: [{  institution: "Maryknoll High School, Udupi", period: "2015", location: "Udupi, Karnataka", grade: "96.16% – Secured 6th place at the district level in Kannada medium." }]
+    entries: [{
+      institution: "Al-Hakam Bin Hisham High School",
+      period: "2018",
+      location: "Makkah, Saudi Arabia",
+      grade: "96.0%"
+    }]
   },
   {
-    label: "PU Course (PCMB)",
-    icon: <FaGraduationCap className="text-yellow-600" />,
-    entries: [{  institution: "Viveka PU College, Udupi", period: "2017", location: "Udupi, Karnataka", grade: "87.83% – PCMB" }]
-  },
-  {
-    label: "B.E. – Computer Science",
+    label: "B.Sc. – Computer Science",
     icon: <FaUniversity className="text-blue-500" />,
-    entries: [{  institution: "Shri Madhwa Vadiraja Institute of Technology and Management, Udupi", period: "2021", location: "Udupi, Karnataka", grade: "7.38 CGPA" }]
+    entries: [{
+      institution: "Umm Al-Qura University",
+      period: "2024",
+      location: "Makkah, Saudi Arabia",
+      grade: "GPA: 3.45 / 4.00"
+    }]
   }
 ];
+
 
 // ========== COMPONENTS ==========
 function MainTabBar({ activeTab, setActiveTab, styles }) {
   const tabs = [
-    { id: "skills", label: "Skills", icon: <FaCode className="text-blue-500" /> },
+    // { id: "skills", label: "Skills", icon: <FaCode className="text-blue-500" /> },
     { id: "highlights", label: "Highlights", icon: <FaTrophy className="text-yellow-500" /> },
     { id: "experience", label: "Experience", icon: <FaBriefcase className="text-purple-600" /> },
     { id: "education", label: "Education", icon: <FaGraduationCap className="text-green-500" /> }
@@ -305,7 +304,7 @@ function SkillCard({ skill, styles, isMobile = false }) {
           <span className="text-3xl">{skill.icon}</span>
           <div>
             <div className={`text-[18px] ${styles.cardTitle}`}>{skill.name}</div>
-            <div className={`text-[15px] ${styles.cardDesc}`} style={{marginTop: -2}}>{skill.desc}</div>
+            <div className={`text-[15px] ${styles.cardDesc}`} style={{ marginTop: -2 }}>{skill.desc}</div>
           </div>
         </div>
         <div className={`font-bold text-xl ${styles.percent}`}>{skill.percent}%</div>
@@ -320,8 +319,8 @@ function SkillCard({ skill, styles, isMobile = false }) {
               background: styles.bar === "from-cyan-400 to-cyan-200"
                 ? "linear-gradient(90deg, #22d3ee 25%, #a5f3fc 100%)"
                 : styles.bar === "from-yellow-400 to-yellow-200"
-                ? "linear-gradient(90deg, #facc15 25%, #fef08a 100%)"
-                : "linear-gradient(90deg, #60a5fa 25%, #1e3a8a 100%)"
+                  ? "linear-gradient(90deg, #facc15 25%, #fef08a 100%)"
+                  : "linear-gradient(90deg, #60a5fa 25%, #1e3a8a 100%)"
             }}
           ></div>
         </div>
@@ -334,8 +333,7 @@ function SkillCard({ skill, styles, isMobile = false }) {
 export default function About() {
   const { theme } = useTheme();
   const styles = themeStyles[theme] || themeStyles.icy;
-  const [activeTab, setActiveTab] = useState("skills");
-  const [skillsTab, setSkillsTab] = useState(0);
+  const [activeTab, setActiveTab] = useState("highlights");
   const [expTab, setExpTab] = useState(0);
   const [eduTab, setEduTab] = useState(0);
 
@@ -354,51 +352,15 @@ export default function About() {
           About <span className={styles.accent}>Me</span>
         </h1>
         <p className={`text-lg md:text-xl ${styles.textSecondary} max-w-3xl mx-auto leading-relaxed`}>
-          Passionate Full-Stack Developer with 2 years of Professional Experience and 4+ Overall.
-        </p>
+          Mazen here, a tech project manager who loves early-stage chaos and startup vibes.
+          I juggle product development, team organizing, decision making, and business growth,
+          I juggle them all with a smile and a cup of tea 🍵       </p>
       </div>
       {/* Main Tabs */}
       <MainTabBar activeTab={activeTab} setActiveTab={setActiveTab} styles={styles} />
       <div className="min-h-[400px] md:min-h-[600px] transition-all duration-500">
         {/* Skills */}
-        {activeTab === "skills" && (
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10 animate-fadein">
-            <SideTabBar
-              groups={skillSections}
-              activeIndex={skillsTab}
-              setActiveIndex={setSkillsTab}
-              iconMap={skillGroupIcons}
-            />
-            <div className="flex-1 transition-all duration-500">
-              <div className="mb-4 md:mb-6 flex items-center gap-2">
-                {skillSections[skillsTab].icon}
-                <h2 className={`text-lg md:text-2xl font-bold ${styles.text} mb-3`}>
-                  {skillSections[skillsTab].group}
-                </h2>
-              </div>
-              {/* Mobile Grid - 4 columns */}
-              <div className="grid grid-cols-4 gap-3 md:hidden">
-                {skillSections[skillsTab].keys.map((key) => {
-                  const skill = allSkillDetails.find(s => s.key === key);
-                  if (!skill) return null;
-                  return (
-                    <SkillCard key={key} skill={skill} styles={styles} isMobile={true} />
-                  );
-                })}
-              </div>
-              {/* Desktop Grid - 2 columns */}
-              <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-2 gap-5">
-                {skillSections[skillsTab].keys.map((key) => {
-                  const skill = allSkillDetails.find(s => s.key === key);
-                  if (!skill) return null;
-                  return (
-                    <SkillCard key={key} skill={skill} styles={styles} isMobile={false} />
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        )}
+
         {/* Highlights */}
         {activeTab === "highlights" && (
           <div className="w-full transition-all duration-500 animate-fadein">
