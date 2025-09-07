@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://abshetty.in",
+  "homepage": "https://newmazen.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

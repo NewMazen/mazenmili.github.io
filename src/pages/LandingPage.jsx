@@ -2,8 +2,8 @@ import React, { useEffect, useState, useMemo, useCallback } from "react";
 import { useTheme } from "../ThemeContext";
 
 const images = [
-  "/images/profile1.png",
-  "/images/profile2.png",
+  "public/images/profile1.png",
+  "public/images/profile2.png",
 ];
 
 const accentsMap = {
