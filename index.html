@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="public/images/mazen1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" as="image" href="public/images/profile1.png">
-    <link rel="prefetch" as="image" href="public/images/profile2.png">
+    <link rel="preload" as="image" href="/public/images/profile1.png">
+    <link rel="prefetch" as="image" href="/public/images/profile2.png">
     <title>Mazen Malibari</title>
     <!-- ADD THIS SCRIPT -->
     <script>
         // Handle GitHub Pages SPA redirect
-        (function() {
+        (function () {
             const redirectPath = sessionStorage.getItem('redirectPath');
             if (redirectPath) {
                 sessionStorage.removeItem('redirectPath');
@@ -20,8 +21,10 @@
     </script>
     <!-- END OF ADDED SCRIPT -->
 </head>
+
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
